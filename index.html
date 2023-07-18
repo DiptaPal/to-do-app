@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do List</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <section class="w-9/12 m-auto text-center mt-28 font-semibold">
+        <h1 class="text-5xl text-blue-500 mb-16">To Do List</h1>
+        <div>
+            <input type="text" class="outline-pink-500 rounded-l-lg py-4 pl-4 w-5/12 m-auto text-4xl border border-r-0 border-pink-500 focus:outline-none" id="text">
+            <button class="bg-cyan-600 rounded-r-lg py-4 px-6 text-4xl -ml-1 text-white border border-cyan-600" id="add-item-btn">Add Item</button>
+        </div>
+        <div class="text-center mt-16">
+            <div class="grid grid-cols-3 border-b-2 border-black py-3">
+                <h3 class="text-2xl font-semibold">Number</h3>
+                <h3 class="text-2xl font-semibold">Description</h3>
+                <h3 class="text-2xl font-semibold">Action</h3>
+            </div>
+            
+            <div class="text-center mt-16 mb-16" id="parent-div">
+                
+            </div>
+        </div>
+    </section>
+
+    <script src="./js/addItem.js"></script>
+</body>
+</html>
